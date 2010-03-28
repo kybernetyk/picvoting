@@ -1,3 +1,5 @@
 .DS_Store
 log/*
 public/data/*
+public/pictures/*
+public/upload_and_process/*
