@@ -1,0 +1,25 @@
+#last_voted_picture
+{
+	max-width: 160px;
+	max-height: 160px;
+}
+
+#last_voted_text
+{
+	text-align: center;
+	
+}
+
+#mainPic
+{
+	margin:0 auto; 
+	display: block; 
+/*	max-width: 600px; */
+	max-height: 400px;"
+}
+
+#detailPic
+{
+	margin:0 auto; 
+	display: block; 
+}

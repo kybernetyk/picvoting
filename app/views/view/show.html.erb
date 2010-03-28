@@ -1,0 +1,63 @@
+<% content_for :head do %>
+  <title><%= site_title %> - <%= @picture_title %></title>
+	<meta name="description" content="Auf Schlampen.be gibt es Bilder von heissen Girls, Babes und Schlampen zu bewerten!">
+	<meta name="keywords" content="schlampe, schlampen, flittchen, geile, geile schlampen, geile flittchen, babes, partybabes">
+	<meta name="copyright" content="Vito Media International - 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010">
+	<meta name="author" content="Don Vito">
+	<meta name="email" content="info@schlampen.be">
+	<meta name="Charset" content="UTF-8">
+<% end %>
+
+<% content_for :last_voted_box do  %>
+<% if (@last_voted_picture_url && @last_voted_picture_rating) %>
+
+	<div id="randomFail">
+		<center><a href="<%= @last_voted_view_link %>"><img id='last_voted_picture' src="<%= @last_voted_picture_url %>"></a></center>
+		<p id='last_voted_text'><%= @last_voted_picture_rating %></p>
+	</div>						
+		
+<% end %>
+<% end %>
+
+<% content_for :main_picture do %>
+	<center><span style="font-size: 50%; color: LightGrey;"><%= @picture.description %></span></center>
+	<br />
+	<a href="<%= detailview_url (:id => @picture.id) %>" target="_blank<%= @picture.id %>"><img class="picBorder" id="mainPic" src="<%= @picture_url %>" alt="Schlampe Nummer <%= @picture.id %> - <%= @picture.title %> - <%= @picture.description %>" title="<%= @picture.description %>" /></a>
+
+<% end %>
+	
+<% content_for :voting_bar do %>
+	<center>
+	<div id='voting_bar'>
+		<%= form_tag ({:action => 'vote'}) %>
+			<input type="hidden" name="picture_id" value="<%= @picture_id %>">
+			<table width=100% border=0 style="border:2px solid black; margin-top: 10px;"><tr>
+			<td bgcolor="#FFFF00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="1" onclick="this.form.submit()">1</b></font></td>
+			<td bgcolor="#FFE600" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="2" onclick="this.form.submit()">2</b></font></td>
+			<td bgcolor="#FFC200" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="3" onclick="this.form.submit()">3</b></font></td>
+			<td bgcolor="#FF8D00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="4" onclick="this.form.submit()">4</b></font></td>
+			<td bgcolor="#FF7600" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="5" onclick="this.form.submit()">5</b></font></td>
+			<td bgcolor="#FF6300" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="6" onclick="this.form.submit()">6</b></font></td>
+			<td bgcolor="#FF4C00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="7" onclick="this.form.submit()">7</b></font></td>
+			<td bgcolor="#FF4400" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="8" onclick="this.form.submit()">8</b></font></td>
+			<td bgcolor="#FF2E00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="9" onclick="this.form.submit()">9</b></font></td>
+			<td bgcolor="#FF0000" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="10" onclick="this.form.submit()">10</b></font></td>
+			</tr></table>
+			</form>
+	</div></center>
+<% end %>
+
+<% content_for :share_box do %>
+	<div class='stats_box' style='margin-left: 15px;'>
+			<a href="http://twitter.com/home?status=Was ne geile Schlampe: <%= mainview_url (:id => @picture.id) %>" title="Tweet This!" target="_blank"><img src="/images/tweet-this-1.png"></a> 
+			<br />
+			<a href="http://www.facebook.com/sharer.php?u=<%= mainview_url (:id => @picture.id) %>" title="Farmville This!" target="_blank"><img src="/images/fb-this.png"></a> 
+	</div>
+<% end %>
+
+<% content_for :stats_box do %>
+	<div class='stats_box' style='margin-left: 15px;'>
+		<%= @stats_num_of_pics %> Schlampen<br />
+		<%= @stats_num_of_votes %> Votes<br />
+	</div>
+<% end %>

@@ -1,0 +1,10 @@
+PictureItem
+	fields:
+		title
+		description
+		path_to_file
+		rating
+		number_of_votes
+		
+	extern:
+		comments

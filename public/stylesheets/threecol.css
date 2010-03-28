@@ -1,0 +1,83 @@
+body {
+		margin:0;
+		padding:0;
+		border:0;			/* This removes the border around the viewport in old versions of IE */
+		width:100%;
+		background:#FFBA00;
+		min-width:1000px;		/* Minimum width of layout - remove line if not required */
+						/* The min-width property does not work in old versions of Internet Explorer */
+	}
+
+	/* Header styles */
+	#header 
+	{
+		clear:both;
+		float:left;
+		width:100%;
+		height: 50px;
+		border-bottom:1px solid #000;
+	}
+	
+	/* Footer styles */
+	#footer 
+	{
+		clear:both;
+		float:left;
+		width:100%;
+		height: 70px;
+		border-top:1px solid #000;
+	}
+	
+
+	/* column container */
+	.colmask {
+		position:relative;	/* This fixes the IE7 overflow hidden bug */
+		clear:both;
+		float:left;
+		width:100%;			/* width of whole page */
+		overflow:hidden;		/* This chops off any overhanging divs */
+	}
+	/* common column settings */
+	.colright,
+	.colmid,
+	.colleft {
+		float:left;
+		width:100%;			/* width of page */
+		position:relative;
+	}
+	.midbar,
+	.leftbar,
+	.rightbar {
+		float:left;
+		position:relative;
+		padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+						only padding top and bottom is included here, make it whatever value you need */
+		overflow: auto;
+	}
+	/* 3 Column settings */
+	.threecol {
+	/*	background:#eee;*/		/* right column background colour */
+	}
+	.threecol .colmid {
+		right:25%;			/* width of the right column */
+	/*	background:#fff;*/		/* center column background colour */
+	}
+	.threecol .colleft {
+		right:50%;			/* width of the middle column */
+		/*background:#f4f4f4;*/	/* left column background colour */
+	}
+	.threecol .midbar {
+		width:46%;			/* width of center column content (column width minus padding on either side) */
+		left:102%;			/* 100% plus left padding of center column */
+	}
+	.threecol .leftbar {
+		width:21%;			/* Width of left column content (column width minus padding on either side) */
+		left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.threecol .rightbar {
+		width:21%;			/* Width of right column content (column width minus padding on either side) */
+		left:85%;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+
+	

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				
+			<%= yield :head %>
+	
+			<%= stylesheet_link_tag "main" %>
+			<%= stylesheet_link_tag "custom" %>
+			
+			<script language="JavaScript" type="text/javascript">
+			<!--
+			function breakout_of_frame()
+			{
+			  if (top.location != location) {
+			    top.location.href = document.location.href ;
+			  }
+			}
+			-->
+			</script>
+			
+	</head>
+	<body onload="breakout_of_frame();">
+		<div id="wrapper">
+			<div id="bodyWrapper">
+				<div id="logoWrapper">
+					<a href="/"><div id="logo"></div></a>
+
+					<div id="heads">
+						<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+						<script type="text/javascript" src="http://www.banner-rotation.com/rotate.aspx?ref=240051&site=2832&pool=3"></script>
+						<noscript><a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=2832&type=b1&bnb=1" target="_blank"><img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=2832&b=1" border="0" /></a><br /></noscript>
+						<!-- END PARTNER PROGRAM -->						
+					</div>
+
+					<br style="clear:both" />
+			</div>
+				
+				<div id="contentWrapper">
+					<div id="leftContainer">
+						<%= yield :last_voted_box %>
+
+					<div class="leftBox">
+						<h2>Share!</h2>
+						<%= yield :share_box %>
+					<br style="clear:both" />
+						<h2>Stats</h2>
+						<%= yield :stats_box %>
+					</div>						
+	
+				</div>
+
+				<div id="rightContainer">
+						<div id="picWrapper">
+							<%= yield :main_picture %>
+							<%= yield :voting_bar %>
+						</div>						
+				</div>
+
+				<div id="rightContainer2">
+					<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+					<script type="text/javascript" src="http://www.banner-rotation.com/rotate.aspx?ref=240051&site=2832&pool=5"></script>
+					<noscript><a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=2832&type=b1&bnb=1" target="_blank"><img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=2832&b=1" border="0" /></a><br /></noscript>
+					<!-- END PARTNER PROGRAM -->
+				</div>
+
+
+				<br style="clear:both" />
+				</div>
+
+				<div id="footda">
+					<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+					<script type="text/javascript" src="http://www.banner-rotation.com/rotate.aspx?ref=240051&site=2832&pool=3"></script>
+					<noscript><a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=2832&type=b1&bnb=1" target="_blank"><img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=2832&b=1" border="0" /></a><br /></noscript>
+					<!-- END PARTNER PROGRAM -->
+				</div>
+
+				
+
+
+				
+
+			
+				<br />
+<div style="text-align:center; margin-top: 40px;">
+	<a href="#">Caracum</a> |
+	<a href="/main/abuse">Report Abuse</a> |
+	<a href="/main/tos">Terms of Service</a> | 
+	<a href="/main/contact">Contact Us</a> | 
+	<a href="/main/partner">Partner</a>
+</div>  
+<br />			</div>
+			
+		</div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #222222;
+	color: #fff;
+	font-family: Arial, Verdana;
+}
+h1 {
+	color: #ff0042;
+	font-size: 150%;
+	padding:0;
+	margin:0;
+	margin-bottom: 15px;
+}
+h2 {
+	color: #ff0042;
+	font-size: 120%;
+	padding:0;
+	margin:0;
+	margin-bottom: 5px;
+	margin-top:5px;
+}
+img {
+	border: 0;
+}
+a {
+	color: #fff;
+}
+#wrapper {
+	
+}
+
+#menu {
+	text-align: center;
+	background-color: #2c2c2c;
+	padding-top: 7px;
+	padding-bottom: 4px;
+	border-bottom: 5px solid #131313;
+	color: #fff;
+	font-size: 20px;
+
+}
+
+#menu img
+{
+	margin-bottom: -8px;
+	
+}
+
+
+#menu a {
+	color: #ff0042;
+	text-decoration: none;
+}
+#menu a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#bodyWrapper {
+	margin: 0 auto;
+	width: 1060px;
+}
+
+#logoWrapper {
+	margin-top: 10px;
+}
+
+#logo {
+	background-image: url(/images/logo.png);
+	background-repeat: no-repeat;
+	width: 230px;
+	height: 79px;
+	float: left;
+}
+
+#heads {
+	border: 5px solid #0d0d0d;
+	width: 728px;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+
+
+#contentWrapper {
+	margin-top: 30px;
+}
+
+#leftContainer {
+	width: 200px;
+	float: left;
+}
+
+#mainContainer {
+	width: 650px;
+}
+
+#randomFail {
+	background-image: url(/images/randomfail.png);
+	background-repeat: no-repeat;
+	width: 180px;
+	padding-top: 30px;
+	margin: 0 auto;
+
+}
+
+#randomFail img {
+	border: 6px solid #0d0d0d;
+}
+
+#login {
+	margin-top:15px;
+}
+
+#login input[type=text] {
+	border: 4px solid #0d0d0d;
+	padding: 3px;
+	width: 165px;
+	color: #000;
+}
+#login input[type=password] {
+	border: 4px solid #0d0d0d;
+	padding: 3px;
+	width: 165px;
+	color: #000;
+}
+#login input[type=submit] {
+	background-color: #222222;
+	color: #fff;
+	width: 175px;
+	text-align: right;
+	border: 0;
+	padding: 0;
+	font-size: 125%;
+	cursor: pointer;
+}
+
+#rightContainer {
+	margin-left: 5px;
+	float: left;
+	width: 645px;
+}
+
+#rightContainer2 
+{
+	border: 5px solid #0d0d0d;
+	margin-left: 5px;
+	float: right;
+	margin-top: -20px;
+}
+
+#contentBox {
+	background-color: #2c2c2c;
+	padding:5px;
+}
+
+#failPics {
+	background-image: url(/images/failpics.png);
+	width: 100px;
+	height: 30px;
+}
+
+#failPicCon {
+	background-color: #2c2c2c;
+	padding-bottom: 10px;
+}
+
+#premiumPartner {
+	background-image: url(/images/premiumpartner.png);
+	background-repeat: no-repeat;
+	width: 188px;
+	height: 22px;
+	margin-top: 35px;
+	padding: 4px;
+	background-position: 4px 4px;
+	background-color: #2c2c2c;
+}
+
+#premiumPartnerCon {
+	background-color: #2c2c2c;
+	padding: 10px;
+	font-size: 125%;
+}
+
+#funPics {
+	background-image: url(/images/funpics.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	width: 99px;
+	height: 27px;
+	margin-top: 25px;
+	background-color: #2c2c2c;
+}
+
+#funPicsCon {
+	background-color: #2c2c2c;
+	padding-bottom: 10px;
+}
+#sexyPics {
+	background-image: url(/images/sexypics.png);
+	background-repeat: no-repeat;
+	width: 114px;
+	height: 27px;
+	margin-top: 25px;
+	background-color: #2c2c2c;
+}
+#sexyPicsCon {
+	background-color: #2c2c2c;
+	padding-bottom: 10px;
+}
+#footda {
+	border: 5px solid #0d0d0d;
+	width: 728px;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: -110px;
+}
+#errorBox {
+	border: 2px solid #ff0042;
+	background-color: #ffc2d2;
+	font-weight:bold;
+	color: #000;
+}
+#picMenu {
+	
+}
+.leftBox {
+	background-color: #2c2c2c;
+	padding: 7px;
+	width: 70%;
+	margin-bottom: 15px;
+	border: 5px solid #0d0d0d;
+	margin-left: auto;
+    margin-right: auto;
+}
+.leftBox .bigWhite {
+	font-size: 100%;
+}
+.leftBox a {
+	text-decoration: none;
+}
+.more {
+	text-align: right;
+}
+.comment-left {
+	font-size: 75%;
+	display:block;
+	margin:0;
+	margin-bottom: 5px;
+	padding:0;
+}
+.comment-left strong {
+	font-size: 110%;
+}
+.register {
+	color: #ff0042;
+	font-size: 125%;
+	text-decoration: none;
+}
+.picLink {
+	color: #fff;
+	text-decoration: none;
+}
+.picBorder {
+	border: 6px solid #0d0d0d;
+}
+.bigWhite {
+	color: #fff;
+	font-size: 125%;
+}
+.comment {
+	background-color: #151515;
+	width: 100%;
+	padding: 7px;
+	margin-bottom: 10px;
+}
+.picCon {
+	text-align: right;
+	margin-left: 10px;
+	font-size: 60%;
+	display: block;
+	width: 80px;
+	height: 140px;
+	float: left;
+	margin-top: 7px;
+}
+
+.picCon img {
+	border: 3px solid #0d0d0d;
+}
+
+.trailer {
+	color: #3b3b3b;
+}
+.paginationControl {
+	text-align: center;
+}
