@@ -1,5 +1,5 @@
 <% content_for :head do %>
-    <title><%= site_title %> - <%= @picture.title %></title>
+  <title><%= site_title %> - Top 10 Schlampen!</title>
 	<meta name="description" content="Auf Schlampen.be gibt es Bilder von heissen Girls, Babes und Schlampen zu bewerten!">
 	<meta name="keywords" content="schlampe, schlampen, flittchen, geile, geile schlampen, geile flittchen, babes, partybabes">
 	<meta name="copyright" content="Vito Media International - 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010">
@@ -8,13 +8,22 @@
 	<meta name="Charset" content="UTF-8">
 <% end %>
 
-<% content_for :sidebar do %>
-	<%= render :partial => 'shared/sidebar' %>
-<% end %>
+<div id="picWrapper" class="picBorder" >
+	<center>
+	<table border="0">
 
+	<% for picture in @top_pictures  %>
+	<tr>
+		<td align="center">
+			<a href="<%=  mainview_url(:id => picture.id) %>"><img class="picBorder" id="top_picture" src="<%= picture.hosting_filename %>" /></a>
+		</td>
+		<td align="center">
+			<%= sprintf("∅ %.2f / %i votes", picture.overall_rating,picture.number_of_votes) %>
+		</td>
+	</tr>
+	<% end %>
 
-<div id="picWrapper">
-	<a href="<%= detailview_url (:id => @picture.id) %>" target="_blank<%= @picture.id %>"><img class="picBorder" id="mainPic" src="<%= @picture.hosting_filename %>" alt="Schlampe Nummer <%= @picture.id %> - <%= @picture.title %> - <%= @picture.description %>" title="<%= @picture.description %>" /></a>
+	</table>
+</center>
+</div>
 
-	<%= render :partial => "voting_bar" %>
-</div>						

@@ -28,6 +28,11 @@ img {
 a {
 	color: #fff;
 }
+a:hover {
+	color: #ff0042;
+
+}
+
 #wrapper {
 	
 }
@@ -241,9 +246,18 @@ a {
 .leftBox .bigWhite {
 	font-size: 100%;
 }
+
 .leftBox a {
-	text-decoration: none;
+	color: #fff;
+	text-decoration: underline;
 }
+.leftBox a:hover {
+	color: #ff0042;
+
+}
+
+
+
 .more {
 	text-align: right;
 }

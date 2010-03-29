@@ -8,7 +8,7 @@ class Picture < ActiveRecord::Base
       find(ids[rand(ids.length)]["id"].to_i) unless ids.blank?
   end
   
-  def overall_rating
+  def overall_rating_calc
     orating = 0.0;
     
     orating = rating.to_f / number_of_votes.to_f;

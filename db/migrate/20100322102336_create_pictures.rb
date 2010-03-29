@@ -7,6 +7,7 @@ class CreatePictures < ActiveRecord::Migration
       t.column  :path_to_file,    :string
       t.column  :rating,          :integer
       t.column  :number_of_votes, :integer
+      t.column  :overall_rating,  :float
       
       t.timestamps
     end

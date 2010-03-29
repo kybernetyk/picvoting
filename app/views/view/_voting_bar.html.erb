@@ -1,0 +1,18 @@
+<center>
+<div id='voting_bar'>
+	<%= form_tag ({:action => 'vote'}) %>
+		<input type="hidden" name="picture_id" value="<%= @picture.id %>">
+		<table width=100% border=0 style="border:2px solid black; margin-top: 10px;"><tr>
+		<td bgcolor="#FFFF00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="1" onclick="this.form.submit()">1</b></font></td>
+		<td bgcolor="#FFE600" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="2" onclick="this.form.submit()">2</b></font></td>
+		<td bgcolor="#FFC200" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="3" onclick="this.form.submit()">3</b></font></td>
+		<td bgcolor="#FF8D00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="4" onclick="this.form.submit()">4</b></font></td>
+		<td bgcolor="#FF7600" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="5" onclick="this.form.submit()">5</b></font></td>
+		<td bgcolor="#FF6300" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="6" onclick="this.form.submit()">6</b></font></td>
+		<td bgcolor="#FF4C00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="7" onclick="this.form.submit()">7</b></font></td>
+		<td bgcolor="#FF4400" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="8" onclick="this.form.submit()">8</b></font></td>
+		<td bgcolor="#FF2E00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="9" onclick="this.form.submit()">9</b></font></td>
+		<td bgcolor="#FF0000" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="10" onclick="this.form.submit()">10</b></font></td>
+		</tr></table>
+		</form>
+</div></center>

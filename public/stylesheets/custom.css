@@ -4,6 +4,12 @@
 	max-height: 160px;
 }
 
+#top_picture
+{
+	max-width: 200px;
+	max-height: 100px;
+}
+
 #last_voted_text
 {
 	text-align: center;

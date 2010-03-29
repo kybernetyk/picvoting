@@ -4,9 +4,13 @@
 
 <% content_for :menu do %>
 	Link to this pic: <a href="<%= mainview_url (:id => @picture.id) %>"><%= mainview_url (:id => @picture.id) %></a> 
-	| <a href="javascript:window.close();">Close X</a>
-	| <a href="http://twitter.com/home?status=Was ne geile Schlampe: <%= mainview_url (:id => @picture.id) %>" title="Tweet This!" target="_blank"><img src="/images/tweet-this-1.png"></a> 
-	| <a href="http://www.facebook.com/sharer.php?u=<%= mainview_url (:id => @picture.id) %>&t=Was ne geile Schlampe!" title="Farmville This!" target="_blank"><img src="/images/fb-this.png"></a> 
+	
+	| <%= twitter_button :title => "Was ne geile Schlampe:", :url => mainview_url (:id => @picture.id) %>
+
+	| <%= facebook_button :url => mainview_url (:id => @picture.id) %>
+	
+	| <a href="javascript:window.close();">Close X</a> 
+	
 <% end %>
 
 

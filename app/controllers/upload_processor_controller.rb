@@ -32,7 +32,8 @@ class UploadProcessorController < ApplicationController
        
        pic.title = "Schlampe ##{pic.id.to_s}";
        pic.description = "Dies ist die Schlampe mit der Nummer #{pic.id.to_s} aus unserer grossen Schlampen-Datenbank!"
-       pic.rating = 0.0
+       pic.rating = 0
+       pic.overall_rating = 0.0
        pic.number_of_votes = 0
        
        source_file = process_dir + f;
