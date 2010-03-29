@@ -68,6 +68,8 @@ class ViewController < ApplicationController
       vote.vote_value = params[:rating].to_i;
       vote.save
       
+      session[pic.id] = 1;
+      
     end
     
    # redirect_to :action => 'random'
