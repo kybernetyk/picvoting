@@ -24,6 +24,10 @@ class ViewController < ApplicationController
   end
 
   def detail
+  
+	if (params[:pic])
+  	  params[:id] = params[:pic];
+    end
     
     if (!params[:id])
       render :text => "pic not found!";

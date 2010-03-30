@@ -50,5 +50,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.mainview ':id', :controller => 'view', :action => 'show'
   map.detailview 'media/:id', :controller => 'view', :action => 'detail'
+  
+  map.media '/media.php', :controller => 'view', :action => 'detail'
 
 end
