@@ -1,5 +1,10 @@
 class ViewController < ApplicationController
   def show
+   if (params[:i])
+	redirect_to mainview_url(:id => params[:i])
+	return
+   end
+
     if (!params[:id])
       #redirect_to :action => 'random'
       redirect_to mainview_url(:id => Picture.random)
