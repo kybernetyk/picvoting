@@ -1,0 +1,5 @@
+# mod_rewrite in use
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{http_host} ^schlampen.be [NC]
+RewriteRule ^(.*)$ http://www.schlampen.be/$1 [R=301,L]
