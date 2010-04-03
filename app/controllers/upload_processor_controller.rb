@@ -53,7 +53,7 @@ class UploadProcessorController < ApplicationController
        else
          @output = @output + "ok"
        end
-
+       pic.url_name = pic.title.parameterize.to_s
        #pic.filename = pic.id.to_s + File.extname (f);
        pic.path_to_file = dest_file;
        pic.save
@@ -63,4 +63,17 @@ class UploadProcessorController < ApplicationController
 
      #render :text => output
    end
+   
+   def update_url_names
+     pics = Picture.find :all
+     
+     for p in pics
+       p.url_name = p.title.parameterize.to_s
+       p.save
+     end
+     
+     render :text => "Updated #{pics.count} pictures"
+     
+   end
+   
 end

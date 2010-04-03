@@ -3,11 +3,11 @@
 <% end %>
 
 <% content_for :menu do %>
-	Link zu dieser Schlampe: <a href="<%= mainview_url (:id => @picture.id) %>"><%= mainview_url (:id => @picture.id) %></a> 
+	Link zu dieser Schlampe: <a href="<%= mainview_url (:id => @picture) %>"><%= mainview_url (:id => @picture) %></a> 
 	
-	| <%= twitter_button :title => "Was ne geile Schlampe:", :url => mainview_url (:id => @picture.id) %>
+	| <%= twitter_button :title => "Was ne geile Schlampe:", :url => mainview_url (:id => @picture) %>
 
-	| <%= facebook_button :url => mainview_url (:id => @picture.id) %>
+	| <%= facebook_button :url => mainview_url (:id => @picture) %>
 	
 	| <a href="javascript:window.close();">Close X</a> 
 	

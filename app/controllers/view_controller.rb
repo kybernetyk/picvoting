@@ -11,9 +11,12 @@ class ViewController < ApplicationController
       return
     end
     
-    pic = nil;
+    #pic = nil;
+    # if we get a numerical ID in the url we just redirect to the url_name
     if (Picture.exists?(params[:id]))
       pic = Picture.find(params[:id])
+      redirect_to mainview_url(:id => pic)
+      return
     else
       pic = Picture.find_by_url_name(params[:id])
     end
@@ -42,6 +45,8 @@ class ViewController < ApplicationController
     @picture = nil;
     if (Picture.exists?(params[:id]))
       @picture = Picture.find(params[:id])
+       redirect_to detailview_url(:id => @picture)
+       return;
     else
       @picture = Picture.find_by_url_name(params[:id])
     end
@@ -57,16 +62,16 @@ class ViewController < ApplicationController
 
   def vote
     
-    if (!params[:picture_id])
+    if (!params[:picture])
       redirect_to :action => 'random'
       return
     end
     
-    pic_id = params[:picture_id];
+    pic_url_name = params[:picture];
 
-    pic = Picture.find(pic_id)
+    pic = Picture.find_by_url_name (pic_url_name)
     if (pic)
-      session[:last_voted_picture_id] = pic_id
+      session[:last_voted_picture] = pic_url_name
       pic.number_of_votes += 1;
       pic.rating += params[:rating].to_i;
       pic.overall_rating = pic.overall_rating_calc
@@ -77,8 +82,8 @@ class ViewController < ApplicationController
       vote.vote_value = params[:rating].to_i;
       vote.save
       
-      session[pic.id] = 1;
-      
+#      session[pic.id] = 1;
+      session[pic.to_param.to_s] = 1
     end
     
    # redirect_to :action => 'random'

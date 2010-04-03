@@ -14,9 +14,9 @@
 
 
 <div id="picWrapper">
-	<a href="<%= detailview_url (:id => @picture.id) %>" target="_blank<%= @picture.id %>"><img class="picBorder" id="mainPic" src="<%= @picture.hosting_filename %>" alt="Schlampe Nummer <%= @picture.id %> - <%= @picture.title %> - <%= @picture.description %>" title="<%= @picture.description %>" /></a>
+	<a href="<%= detailview_url (:id => @picture) %>" target="_blank<%= @picture.to_param %>"><img class="picBorder" id="mainPic" src="<%= @picture.hosting_filename %>" alt="<%= @picture.to_param %> - <%= @picture.title %> - <%= @picture.description %>" title="<%= @picture.description %>" /></a>
 
-	<% if (session[@picture.id] != 1) %>
+	<% if (session[@picture.to_param.to_s] != 1) %>
 		<%= render :partial => "voting_bar" %>
 	<% else %>
 		<p style="text-align: center;">Du hast diese Schlampe bereits bewertet.<br/><a href="/">Andere Schlampe anzeigen!</a></p>

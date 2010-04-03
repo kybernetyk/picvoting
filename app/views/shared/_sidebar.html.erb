@@ -4,7 +4,7 @@
 	<h2>Share!</h2>
 	<% if (@picture) %>
 		<%= render :partial => "shared/share_box", 
-			   	:locals => {:url_to_share => mainview_url (:id => @picture.id), :title => "Was ne geile Schlampe: " } 
+			   	:locals => {:url_to_share => mainview_url (:id => @picture), :title => "Was ne geile Schlampe: " } 
 				%>
 		<% else %>
 				<%= render :partial => "shared/share_box", 

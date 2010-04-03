@@ -1,7 +1,7 @@
 <center>
 <div id='voting_bar'>
 	<%= form_tag ({:action => 'vote'}) %>
-		<input type="hidden" name="picture_id" value="<%= @picture.id %>">
+		<input type="hidden" name="picture" value="<%= @picture.to_param %>">
 		<table width=100% border=0 style="border:2px solid black; margin-top: 10px;"><tr>
 		<td bgcolor="#FFFF00" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="1" onclick="this.form.submit()">1</b></font></td>
 		<td bgcolor="#FFE600" align="center"><font color="white" face="Verdana" size="2"><b><input type="radio" name="rating" value="2" onclick="this.form.submit()">2</b></font></td>

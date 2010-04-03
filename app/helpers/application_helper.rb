@@ -15,8 +15,8 @@ module ApplicationHelper
   end
   
   def last_voted_picture
-    if (session[:last_voted_picture_id])
-      return Picture.find(session[:last_voted_picture_id])
+    if (session[:last_voted_picture])
+      return Picture.find_by_url_name (session[:last_voted_picture])
     end
   end
   

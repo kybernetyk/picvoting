@@ -1,7 +1,7 @@
 <% if (last_voted_picture) %>
 
 	<div id="randomFail">
-		<center><a href="<%=  mainview_url(:id => last_voted_picture.id) %>"><img id='last_voted_picture' src="<%= last_voted_picture.hosting_filename %>"></a></center>
+		<center><a href="<%=  mainview_url(:id => last_voted_picture) %>"><img id='last_voted_picture' src="<%= last_voted_picture.hosting_filename %>"></a></center>
 		<p id='last_voted_text'><%= sprintf("∅ %.2f / %i votes", last_voted_picture.overall_rating,last_voted_picture.number_of_votes) %></p>
 	</div>						
 		

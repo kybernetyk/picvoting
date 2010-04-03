@@ -15,7 +15,7 @@
 	<% for picture in @top_pictures  %>
 	<tr>
 		<td align="center">
-			<a href="<%=  mainview_url(:id => picture.id) %>"><img class="picBorder" id="top_picture" src="<%= picture.hosting_filename %>" /></a>
+			<a href="<%=  mainview_url(:id => picture) %>"><img class="picBorder" id="top_picture" src="<%= picture.hosting_filename %>" /></a>
 		</td>
 		<td align="center">
 			<%= sprintf("∅ %.2f / %i votes", picture.overall_rating,picture.number_of_votes) %>

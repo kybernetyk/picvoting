@@ -1,4 +1,8 @@
 class Picture < ActiveRecord::Base
+  def to_param
+    return title.parameterize
+  end
+  
   def hosting_filename
     return path_to_file.gsub('public','');
   end
