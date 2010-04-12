@@ -31,16 +31,16 @@ module ApplicationHelper
   
   def banner_720
     '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
-		<script type="text/javascript" src="http://www.banner-rotation.com/rotate.aspx?ref=240051&site=2832&pool=3"></script>
-		<noscript><a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=2832&type=b1&bnb=1" target="_blank"><img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=2832&b=1" border="0" /></a><br /></noscript>
-		<!-- END PARTNER PROGRAM -->'
+    <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b32&bnb=32" target="_blank">
+    <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=32" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="728" height="90" /></a><br />
+    <!-- END PARTNER PROGRAM -->'
   end
   
   def banner_skyscraper
     	'<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
-			<script type="text/javascript" src="http://www.banner-rotation.com/rotate.aspx?ref=240051&site=2832&pool=5"></script>
-			<noscript><a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=2832&type=b1&bnb=1" target="_blank"><img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=2832&b=1" border="0" /></a><br /></noscript>
-			<!-- END PARTNER PROGRAM -->';    
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b33&bnb=33" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=33" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="600" /></a><br />
+      <!-- END PARTNER PROGRAM -->';    
   end
        
 end
