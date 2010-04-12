@@ -30,17 +30,92 @@ module ApplicationHelper
   end
   
   def banner_720
-    '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
-    <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b32&bnb=32" target="_blank">
-    <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=32" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="728" height="90" /></a><br />
-    <!-- END PARTNER PROGRAM -->'
+    banner_array = Array.new
+    
+    banner_array <<  '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b26&bnb=26" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=26" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="728" height="90" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+
+        banner_array <<  '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b32&bnb=32" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=32" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="728" height="90" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b4&bnb=4" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=4" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="468" height="60" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b17&bnb=17" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=17" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="468" height="60" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <script type="text/javascript" src="http://www.banner-rotation.com/rotate.aspx?ref=240051&site=2832&pool=2"></script>
+      <noscript><a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=2832&type=b1&bnb=1" target="_blank"><img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=2832&b=1" border="0" /></a><br /></noscript>
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <script type="text/javascript" src="http://www.banner-rotation.com/rotate.aspx?ref=240051&site=2832&pool=3"></script>
+      <noscript><a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=2832&type=b1&bnb=1" target="_blank"><img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=2832&b=1" border="0" /></a><br /></noscript>
+      <!-- END PARTNER PROGRAM -->'
+
+      return banner_array.sort_by {rand}.first
   end
   
   def banner_skyscraper
-    	'<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      banner_array = Array.new
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b3&bnb=3" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=3" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="468" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b18&bnb=18" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=18" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="468" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+    
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
       <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b33&bnb=33" target="_blank">
       <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=33" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="600" /></a><br />
-      <!-- END PARTNER PROGRAM -->';    
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b19&bnb=19" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=19" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="468" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b20&bnb=20" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=20" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="468" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b21&bnb=21" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=21" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="468" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b27&bnb=27" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=27" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="600" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b28&bnb=28" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=28" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="600" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      banner_array << '<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
+      <a href="http://partners.webmasterplan.com/click.asp?ref=240051&site=3237&type=b29&bnb=29" target="_blank">
+      <img src="http://banners.webmasterplan.com/view.asp?ref=240051&site=3237&b=29" border="0" alt="flirt-fever® - Flirt Up Your Life!" width="120" height="600" /></a><br />
+      <!-- END PARTNER PROGRAM -->'
+      
+      return banner_array.sort_by {rand}.first
+      
+      
   end
        
 end
